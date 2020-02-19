@@ -2,12 +2,12 @@
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo color("red"," =================================== \n");
-echo color("red"," Claim Voucher \n");
-echo color("red"," Auto Create & Redeem Voucher \n");
+echo color("red"," Claim Voucher Gojek \n");
+echo color("red"," Auto Create & Redeem Voucher By Bwi123 \n");
 echo color("red"," =================================== \n");
-echo " Created by : GLD RSD \n";
-echo " Version    : 123 \n";
-echo " Time       : ".date('d-m-Y||H:i:s')." \n";
+echo color("Yello"," Created by : GLD RSD \n";
+echo color("Yello"," Version    : 123 \n";
+echo color("Yello"'" Time       : ".date('d-m-Y||H:i:s')." \n";
 echo color("red"," =================================== \n");
 
 //	function change(){
@@ -68,7 +68,7 @@ echo color("red"," =================================== \n");
 					echo "\n".color("green","+] Message: ".$message);
 					goto goride;
 				}else{
-					echo "\n".color("red","-] Message: ".$message);
+					echo "\n".color("nevy","-] Message: ".$message);
 					
 					echo "\n".color("yellow","!] Claim Voc GOFOOD021120B");
 					echo "\n".color("yellow","!] Please wait...");
@@ -106,7 +106,7 @@ echo color("red"," =================================== \n");
 					sleep(3);
 					$goride1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAINGOJEK"}');
 					$message2 = fetch_value($goride1,'"message":"','"');
-					echo "\n".color("red","+] Message: ".$message2);
+					echo "\n".color("nevy","+] Message: ".$message2);
 					sleep(3);
 					
 					$cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
