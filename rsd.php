@@ -5,9 +5,9 @@ echo color("red"," =================================== \n");
 echo color("red"," Claim Voucher Gojek \n");
 echo color("red"," Auto Create & Redeem Voucher By Bwi123 \n");
 echo color("red"," =================================== \n");
-echo " Created by : GLD RSD \n";
-echo " Version    : 123 \n";
-echo " Time       : ".date('d-m-Y||H:i:s')." \n";
+echo "color(yellow"," Created by : GLD RSD \n";
+echo "color(yellow"," Version    : 123 \n";
+echo "color(yellow"," Time       : ".date('d-m-Y||H:i:s')." \n";
 echo color("red"," =================================== \n");
 
 //	function change(){
