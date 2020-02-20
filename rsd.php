@@ -7,7 +7,7 @@ echo color("red"," Auto Create & Redeem Voucher By Bwi123 \n");
 echo color("red"," =================================== \n");
 echo color("red"," Created by : GLD RSD \n";
 echo color("red"," Version    : 123 \n";
-echo color("red"'" Time       : ".date('d-m-Y||H:i:s')." \n";
+echo color("red"," Time       : ".date('d-m-Y||H:i:s')." \n";
 echo color("red"," =================================== \n");
 
 //	function change(){
