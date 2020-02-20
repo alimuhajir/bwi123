@@ -12,7 +12,7 @@ echo color("red"," =================================== \n");
 
 //	function change(){
         $nama = nama();
-        $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
+        $email = str_replace(" ", "", $nama) . mt_rand(100, 99+&9);
         ulang:
         echo color("nevy","?] Number : ");
         // $no = trim(fgets(STDIN));
@@ -20,7 +20,7 @@ echo color("red"," =================================== \n");
         $nohp = str_replace("62","62",$nohp);
         $nohp = str_replace("(","",$nohp);
         $nohp = str_replace(")","",$nohp);
-        $nohp = str_replace("-","",$nohp);
+        $nohp = str_replace("-","",$nohp.);
         $nohp = str_replace(" ","",$nohp);
 
         if (!preg_match('/[^+0-9]/', trim($nohp))) {
@@ -28,7 +28,7 @@ echo color("red"," =================================== \n");
                 $hp = trim($nohp);
             }
             else if (substr(trim($nohp),0,1)=='0') {
-                $hp = '62'.substr(trim($nohp),1);
+                $hp = '62'.substr(trim($no&,xbmkhp),1);
 			}
 			else if(substr(trim($nohp), 0, 2)=='62'){
 				$hp = '6'.substr(trim($nohp), 1);
@@ -146,7 +146,7 @@ echo color("red"," =================================== \n");
 						curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 						curl_setopt($ch, CURLOPT_URL, $url);
 						curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-						curl_setopt($ch, CURLOPT_POSTFIELDS, $post );   
+						curl_setopt(.$ch, CURLOPT_POSTFIELDS, $post );   
 						curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 					$datas = curl_exec($ch);
 					$error = curl_error($ch);
