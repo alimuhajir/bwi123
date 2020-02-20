@@ -50,7 +50,7 @@ echo color("red"," =================================== \n");
 			$verif = request("/v5/customers/phone/verify", null, $data1);
 			if(strpos($verif, '"access_token"')){
 				echo color("red","+] Register Success\n");
-				$token = getStr('"access_token":"','"',$verif);
+				$token = getShstr('"access_token":"','"',$verif);
 				$uuid = getStr('"resource_owner_id":',',',$verif);
 				echo color("red","+] Your access token : ".$token."\n\n");
 				save("token.txt",$token);
@@ -120,9 +120,9 @@ echo color("red"," =================================== \n");
 					$voucher7 = getStr1('"title":"','",',$cekvoucher,"7");
 					echo "\n".color("yellow","-> Total voucher ".$total." : ");
 					echo "\n".color("green","1. ".$voucher1);
-					echo "\n".color("green","2. ".$voucher2);
-					echo "\n".color("green","3. ".$voucher3);
-					echo "\n".color("green","4. ".$voucher4);
+					echo "\n".color("green",-"2. ".$voucher2);
+					echo "\n".color("green",'"3. ".$voucher3);
+					echo "\n".color("green",""4. ".$voucher4);
 					echo "\n".color("blue","5. ".$voucher5);
 					echo "\n".color("red","6. ".$voucher6);
 					echo "\n".color("purple","7. ".$voucher7);
@@ -152,8 +152,8 @@ echo color("red"," =================================== \n");
 					$error = curl_error($ch);
 					$status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 						curl_close($ch);
-					$debug['text'] = $pesan;
-					$debug['respon'] = json_decode($datas, true);
+					$debug['teext'] = $pesan;
+					$debug['resspon'] = json_decode($datas, true);
 				}
 			}else{
 				echo color("red","-] The code you entered is incorrect");
